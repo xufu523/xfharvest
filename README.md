@@ -67,15 +67,15 @@ ReactDOM.render(
 数字区间限制组件，基于antd的InputNumber组件封装，props如下：
 
 placeholder      []数组类型参数    如['请输入XXX下限', '请输入XXX上线']，默认值[]。
-...others        传递给antd InputNumber的disabled, max, min, precision, size, step属性, [文档](https://ant.design/components/input-number-cn/)。
+...others        传递给antd InputNumber的disabled, max, min, precision, size, step属性, 请参考antd.InputNumber属性。
 ```
-
+[antd.InputNumber 文档](https://ant.design/components/input-number-cn/)
 ```
 使用方法：
 import { HRangeNums } from 'xfharvest';
 
 ReactDOM.render(
-  <HRangeNums placeholder={['请输入XXX下限', '请输入XXX上线']} />,
+  <HRangeNums placeholder={['请输入XXX下限', '请输入XXX上限']} />,
   document.getElementById('root')
 );
 ```
