@@ -9,7 +9,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 
 module.exports = {
-	entry: './src/index.js',
+	entry: './src/components/index.js',
 	externals: [nodeExternals()],
 	output: {
 		filename: 'index.js',
