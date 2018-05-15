@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var nodeExternals = require('webpack-node-externals');
 /**
- * webpck2的extract-text-webpack-plugin
+ * webpack2的extract-text-webpack-plugin
  * https://www.npmjs.com/package/extract-text-webpack-plugin
  */
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -32,7 +32,7 @@ module.exports = {
 					return [ require("autoprefixer")({ browsers: ['last 2 versions', 'Firefox ESR', '> 1%', 'ie >= 8', 'iOS >= 8', 'Android >= 4'] }) ]
 				}
 			}
-		})
+    })
 	],
 	module: {
 		rules: [
@@ -84,7 +84,7 @@ module.exports = {
 				{
 					loader: 'file-loader',
 					options: {
-						name: './static/media/[name].[hash:8].[ext]',
+						name: './static/[name].[hash:8].[ext]'
 					}
 				}
 			]
@@ -94,11 +94,7 @@ module.exports = {
 	resolve: {
 		modules: ['src', 'node_modules'],
 		alias: {
-			mixins: __dirname+'/src/styles/mixins.less',
-			'variables.less': __dirname+'/src/styles/mixins.less',
-			components: __dirname+'/src',
-			utils: __dirname+'/src/utils',
-			addons: __dirname+'/src/addons'
+			src: path.join(__dirname, 'src')
 		}
 	}
 };
