@@ -134,3 +134,6 @@
 .h-range-nums .ant-input-number {
   width: calc((100% - 16px) / 2);
 }
+.h-range-nums .test {
+  background: url(./assets/icon_date.084767f6.png) no-repeat;
+}
