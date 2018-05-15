@@ -22,6 +22,8 @@ npm install xfharvest
 
 #### components
 
+components的所有组件均支持按需加载[使用文档请参考](https://www.npmjs.com/package/babel-plugin-import)
+
 - HImgPreview
 
 ```
