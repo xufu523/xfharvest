@@ -22,7 +22,10 @@ npm install xfharvest
 
 #### components
 
-components的所有组件均支持按需加载[使用文档请参考](https://www.npmjs.com/package/babel-plugin-import)
+components的所有组件均支持按需加载[使用文档请参考](https://www.npmjs.com/package/babel-plugin-import)，请将camel2DashComponentName参数设置成false,如
+"plugins": [
+    ["import", { "libraryName": "xfharvest", "style": true, "camel2DashComponentName": false }]
+]
 
 - HImgPreview
 
